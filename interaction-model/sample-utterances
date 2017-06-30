@@ -1,0 +1,55 @@
+CourseIntent what class will teach me about {Item}
+CourseIntent what class will teach me {Item}
+CourseIntent what class goes over {Item}
+CourseIntent what class will teach me how to {Item}
+CourseIntent what class talks about {Item}
+CourseIntent what class covers {Item}
+CourseIntent what class teaches me how to develop {Item}
+CourseIntent what class teaches me {Item}
+CourseIntent what class teaches me about {Item}
+CourseIntent what class teaches {Item}
+
+CourseIntent what course will teach me about {Item}
+CourseIntent what course will teach me {Item}
+CourseIntent what course goes over {Item}
+CourseIntent what course will teach me how to {Item}
+CourseIntent what course talks about {Item}
+CourseIntent what course covers {Item}
+CourseIntent what course teaches me how to develop {Item}
+CourseIntent what course teaches me {Item}
+CourseIntent what course teaches me about {Item}
+CourseIntent what course teaches {Item}
+
+CourseIntent which class will teach me about {Item}
+CourseIntent which class will teach me {Item}
+CourseIntent which class goes over {Item}
+CourseIntent which class will teach me how to {Item}
+CourseIntent which class talks about {Item}
+CourseIntent which class covers {Item}
+CourseIntent which class teaches me how to develop {Item}
+CourseIntent which class teaches me {Item}
+CourseIntent which class teaches me about {Item}
+CourseIntent which class teaches {Item}
+
+CourseIntent which course will teach me about {Item}
+CourseIntent which course will teach me {Item}
+CourseIntent which course goes over {Item}
+CourseIntent which course will teach me how to {Item}
+CourseIntent which course talks about {Item}
+CourseIntent which course covers {Item}
+CourseIntent which course teaches me how to develop {Item}
+CourseIntent which course teaches me {Item}
+CourseIntent which course teaches me about {Item}
+CourseIntent which course teaches {Item}
+
+CourseIntent where can I learn {Item}
+CourseIntent where can I learn about {Item}
+CourseIntent where do I learn {Item}
+CourseIntent where do I learn about {Item}
+CourseIntent how can I learn {Item}
+CourseIntent how can I learn about {Item}
+CourseIntent how do I learn {Item}
+CourseIntent how do I learn about {Item}
+CourseIntent tell me information about {Item}
+CourseIntent tell me about {Item}
+CourseIntent give me information about {Item}
