@@ -89,7 +89,7 @@ var languageStrings = {
             "HELP_MESSAGE": "You can ask questions such as, what class will teach me about artificial intelligence, or, you can say, exit ... Now, what can I help you with?",
             "HELP_REPROMPT": "You can say things like, what class will teach me about artificial intelligence, or you can say, exit ... Now, what can I help you with?",
             "STOP_MESSAGE": "Goodbye!",
-            "COURSE_REPEAT_MESSAGE": "Try saying repeat.",
+            "COURSE_REPEAT_MESSAGE": "Computer Science Course Information",
             "COURSE_NOT_FOUND_MESSAGE": "I\'m sorry, Fullerton does not currently provide a course for ",
             "COURSE_NOT_FOUND_WITH_ITEM_NAME": "%s. ",
             "COURSE_NOT_FOUND_WITHOUT_ITEM_NAME": "that, or I misunderstood you. ",
