@@ -24,25 +24,25 @@ var handlers = {
         this.emit(':ask', this.attributes['speechOutput'], this.attributes['repromptSpeech'])
     },
     'CourseIntent': function () {
-        var itemSlot = this.event.request.intent.slots.Item;
-        var itemName;
-        if (itemSlot && itemSlot.value) {
-            itemName = itemSlot.value.toLowerCase();
+        var courseSlot = this.event.request.intent.slots.Item;
+        var courseName;
+        if (courseSlot && courseSlot.value) {
+            courseName = courseSlot.value.toLowerCase();
         }
 
-        var cardTitle = this.t("DISPLAY_CARD_TITLE", this.t("SKILL_NAME"), itemName);
         var courses = this.t("COURSES");
-        var course = courses[itemName];
+        var courseInfo = courses[courseName];
+        var cardTitle = this.t("DISPLAY_CARD_MSG", courseInfo);
 
-        if (course) {
-            this.attributes['speechOutput'] = course;
-            this.attributes['repromptSpeech'] = this.t("COURSE_REPEAT_MESSAGE");
-            this.emit(':tellWithCard', course, this.attributes['repromptSpeech'], cardTitle, course);
+        if (courseInfo) {
+            this.attributes['speechOutput'] = courseInfo;
+            this.attributes['repromptSpeech'] = this.t("DISPLAY_CARD_TITLE", courseName);
+            this.emit(':tellWithCard', courseInfo, this.attributes['repromptSpeech'], cardTitle, courseInfo);
         } else {
             var speechOutput = this.t("COURSE_NOT_FOUND_MESSAGE");
             var repromptSpeech = this.t("COURSE_NOT_FOUND_REPROMPT");
-            if (itemName) {
-                speechOutput += this.t("COURSE_NOT_FOUND_WITH_ITEM_NAME", itemName);
+            if (courseName) {
+                speechOutput += this.t("COURSE_NOT_FOUND_WITH_ITEM_NAME", courseName);
             } else {
                 speechOutput += this.t("COURSE_NOT_FOUND_WITHOUT_ITEM_NAME");
             }
@@ -83,13 +83,13 @@ var languageStrings = {
         "translation": {
             "COURSES": courses.COURSE_EN_US,
             "SKILL_NAME": "Computer Science Course Helper",
-            "WELCOME_MESSAGE": "Welcome to %s. You can ask a question like, what class will teach me about artificial intelligence? ... Now, what can I help you with.",
+            "WELCOME_MESSAGE": "Welcome to %s. You can ask a question like, what class will teach me programming? ... Now, what can I help you with.",
             "WELCOME_REPROMPT": "For instructions on what you can say, please say help me.",
-            "DISPLAY_CARD_TITLE": "%s  - information for %s.",
-            "HELP_MESSAGE": "You can ask questions such as, what class will teach me about artificial intelligence, or, you can say, exit ... Now, what can I help you with?",
-            "HELP_REPROMPT": "You can say things like, what class will teach me about artificial intelligence, or you can say, exit ... Now, what can I help you with?",
+            "DISPLAY_CARD_TITLE": "Course Information for %s",
+            "DISPLAY_CARD_MSG": "%s",
+            "HELP_MESSAGE": "You can ask questions such as, what class will teach me about artificial intelligence, or, you can say, exit to exit the skill ... Now, what can I help you with?",
+            "HELP_REPROMPT": "You can say things like, what class will teach me about game development, or you can say, exit to exit the skill ... Now, what can I help you with?",
             "STOP_MESSAGE": "Goodbye!",
-            "COURSE_REPEAT_MESSAGE": "Course Information",
             "COURSE_NOT_FOUND_MESSAGE": "I\'m sorry, Fullerton does not currently provide a course for ",
             "COURSE_NOT_FOUND_WITH_ITEM_NAME": "%s. ",
             "COURSE_NOT_FOUND_WITHOUT_ITEM_NAME": "that, or I misunderstood you. ",
@@ -97,12 +97,6 @@ var languageStrings = {
         }
     },
     "en-US": {
-        "translation": {
-            "COURSES" : courses.COURSE_EN_US,
-            "SKILL_NAME": "Computer Science Course Helper"
-        }
-    },
-    "en-GB": {
         "translation": {
             "COURSES" : courses.COURSE_EN_US,
             "SKILL_NAME": "Computer Science Course Helper"
