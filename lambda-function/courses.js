@@ -11,7 +11,7 @@ module.exports = {
       "see": "C programming will be taught in computer science 223C.",
       "visual basic": "You'll learn visual basic in computer science 223H.",
       "java": "Computer science 233J teaches java programming.",
-      "see sharp": "C sharp programming will be taught in computer science 223N.",
+      "c sharp": "C sharp programming will be taught in computer science 223N.",
       "python": "You'll learn how to program in python in computer science 223P.",
       "javascript" : "You'll learn about javascript in the web front end engineering course, also known as computer science 473",
 
@@ -91,7 +91,7 @@ module.exports = {
       "see": "C programming will be taught in computer science 223C.",
       "visual basic": "You'll learn visual basic in computer science 223H.",
       "java": "Computer science 233J teaches java programming.",
-      "see sharp": "C sharp programming will be taught in computer science 223N.",
+      "c sharp": "C sharp programming will be taught in computer science 223N.",
       "python": "You'll learn how to program in python in computer science 223P.",
       "javascript" : "You'll learn about javascript in the web front end engineering course, also known as computer science 473",
 
